@@ -1,0 +1,37 @@
+
+### Outlier Detection Report
+
+#### Methodology
+1. **Dataset Preparation**: Loaded the dataset and checked for latitude and longitude values.
+2. **Geocoding**: Used geopy to geocode addresses and obtain latitude and longitude values.
+3. **Neighbour Identification**: Defined neighbours based on a 1 km radius and calculated geodesic distances.
+4. **Outlier Score Calculation**: Compared votes for each party with the votes of neighbouring units to calculate outlier scores.
+5. **Sorting and Reporting**: Sorted the dataset by outlier scores to identify significant outliers.
+
+#### Findings
+- **Top 3 Outliers**:
+
+##### Outlier 1
+PU-Code               10-01-09-009
+Latitude                  6.448909
+Longitude                  6.51636
+APC_outlier_score            171.5
+LP_outlier_score              83.5
+PDP_outlier_score              0.5
+NNPP_outlier_score             2.5
+##### Outlier 2
+PU-Code               10-01-09-011
+Latitude                  6.448909
+Longitude                  6.51636
+APC_outlier_score            171.5
+LP_outlier_score              83.5
+PDP_outlier_score              0.5
+NNPP_outlier_score             2.5
+##### Outlier 3
+PU-Code               10-07-09-010
+Latitude                  6.195238
+Longitude                 6.274795
+APC_outlier_score            149.5
+LP_outlier_score               2.0
+PDP_outlier_score             65.5
+NNPP_outlier_score             2.0
